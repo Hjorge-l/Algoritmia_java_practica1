@@ -12,7 +12,7 @@ public class Main extends JFrame {
     private final int WIDTH_DATOS_BUTTONS = 300;
     private final int NUM_BUTTONS = 8;
     private final Color colr_win_buttons = Color.LIGHT_GRAY;
-    private final Color colr_win_data = Color.DARK_GRAY;
+    private final Color colr_win_data = Color.LIGHT_GRAY;
     private JFrame ventana;
     private Container panelContenidos;
     //Paneles
@@ -75,6 +75,8 @@ public class Main extends JFrame {
         btn_info_estudiante = new CustomButton(Texts.txt_btn_info_estudiante);
         btn_salir = new CustomButton(Texts.txt_btn_salir);
         //Actions buttons
+        btn_alta_cursos.fun_alta_curso(panelVisual);
+        btn_baja_asignatura.fun_alta_asignaturas(panelVisual);
         btn_salir.fun_close_app();
         //Add button into panelBotones
         panelBotones.add(btn_alta_cursos);
