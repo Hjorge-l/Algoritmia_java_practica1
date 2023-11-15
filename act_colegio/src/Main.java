@@ -9,7 +9,7 @@ VERSION = 0.1
 public class Main extends JFrame {
     private final int HEIGHT = 600;
     private final int WIDTH = 1100;
-    private final int WIDTH_DATOS_BUTTONS = 300;
+    private final int WIDTH_DATOS_BUTTONS = 400;
     private final int NUM_BUTTONS = 8;
     private final Color colr_win_buttons = Color.LIGHT_GRAY;
     private final Color colr_win_data = Color.LIGHT_GRAY;
@@ -76,7 +76,12 @@ public class Main extends JFrame {
         btn_salir = new CustomButton(Texts.txt_btn_salir);
         //Actions buttons
         btn_alta_cursos.fun_alta_curso(panelVisual);
-        btn_baja_asignatura.fun_alta_asignaturas(panelVisual);
+        btn_Matr_estudiante.fun_add_estudiante(panelVisual);
+        btn_baja_curso.fun_delete_curso(panelVisual);
+        btn_baja_asignatura.fun_delete_asignature(panelVisual);
+        btn_info_asignatura.fun_info_asignatura(panelVisual);
+        btn_info_curso.fun_info_curso(panelVisual);
+        btn_info_estudiante.fun_info_estudiante(panelVisual);
         btn_salir.fun_close_app();
         //Add button into panelBotones
         panelBotones.add(btn_alta_cursos);
